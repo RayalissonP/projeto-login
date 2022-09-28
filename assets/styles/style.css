@@ -2,8 +2,11 @@
 
 /*
    Paleta de Cores::
-   Azul: #8AD3F3
-   Rosa: #EA9CEF
+   Rosa: #EF2D56
+   Azul: #155F84
+   Laranja: #ED7D3A
+   Verde Claro: #8CD867
+   Verde escuro: #2FBF71
 */
 
 * {
@@ -14,7 +17,7 @@
 }
 
 body, html {
-   background-color: #3F3D56;
+   background-color: #df2b52;
    height: 100vh;
    width: 100vw;
 }
@@ -37,17 +40,18 @@ section#login {
    width: 250px;
    height: 500px;
    border-radius: 20px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.400);
 }
 
 section#login > div#imagem {
    display: block;
-   background: #EA9CEF url(../images/login.svg) no-repeat;
-   background-size: contain;
+   background: #192de2 url(../images/login.jpg) no-repeat;
+   background-size: cover;
+   background-position: 27%;
    height: 200px;
 }
 
-section#login > divformulario {
+section#login > div#formulario {
    display: block;
    padding: 10px;
 }
