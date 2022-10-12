@@ -38,7 +38,7 @@ section#login {
 
    background-color: white;
    width: 250px;
-   height: 500px;
+   height: 515px;
    border-radius: 20px;
    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.400);
 
@@ -48,7 +48,7 @@ section#login {
 
 section#login > div#imagem {
    display: block;
-   background: #192de2 url(../images/login.jpg) no-repeat;
+   background: url(../images/login.jpg) no-repeat;
    background-size: cover;
    background-position: 27%;
    height: 200px;
@@ -68,19 +68,29 @@ div#formulario > p {
    font-size: 0.8em;
 }
 
+form > div.campo {
+   background-color: #474afd;
+   height: 40px;
+   border-radius: 6px;
+   margin: 5px 0px;
+}
+
+div.campo > label {
+   display: none;
+}
+
 form > input[type=submit] {
    display: block;
    font-size: 1em;
    width: 100%;
    height: 40px;
-   background-color: #df2b52;
-   color: white;
+   background-color: #27ca5e;
    border: none;
    border-radius: 6px;
 }
 
 form > input[type=submit]:hover {
-   background-color: #ff2e5c;
+   background-color: #33ff77;
    cursor: pointer;
 }
 
@@ -92,11 +102,10 @@ form > a.button {
    height: 40px;
    margin-top: 6px;
    padding-top: 6px;
-   background-color: #3f42d3;
    border: 1px solid #00000093;
    border-radius: 6px;
    text-decoration: none;
-   color: white;
+   color: black;
    padding-top: 5px;
 }
 
@@ -105,5 +114,7 @@ form > a.button > i {
 }
 
 form > a.button:hover {
-   background-color: #474afd;
+   background-color: #aa2773;
+   color: white;
+
 }
