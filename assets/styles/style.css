@@ -6,7 +6,8 @@
    Azul: #155F84
    Laranja: #ED7D3A
    Verde Claro: #8CD867
-   Verde escuro: #2FBF71
+   Verde Escuro: #2FBF71
+   *Mudei tudo*
 */
 
 * {
@@ -33,15 +34,15 @@ section#login {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
    overflow: hidden;
 
    background-color: white;
    width: 250px;
-   height: 515px;
+   height: 550px;
    border-radius: 20px;
    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.400);
 
+   transform: translate(-50%, -50%);
    transition: width 0.3s, height 0.3s;
    transition-timing-function: ease;
 }
@@ -68,9 +69,16 @@ div#formulario > p {
    font-size: 0.8em;
 }
 
+div#formulario > p {
+   font-size: 1em;
+   padding-bottom: 8px;
+   text-align: justify;
+}
+
 form > div.campo {
    background-color: #474afd;
    height: 40px;
+   border: 2px solid #474afd;
    border-radius: 6px;
    margin: 5px 0px;
 }
@@ -79,18 +87,41 @@ div.campo > label {
    display: none;
 }
 
+div.campo > i {
+   color: white;
+   font-size: 1.8em;
+   width: 40px;
+   padding: 5px;
+}
+
+div.campo > input {
+   background-color: #33ff77;
+   font-size: 1em;
+   width: calc(100% - 44.36px); /* Função importate*/
+   height: 100%;
+   border: 0px;
+   border-radius: 6px;
+   padding: 4px;
+   transform: translateY(-9px);
+}
+
+div.campo > input:focus-within {
+   background-color: #fff;
+}
+
 form > input[type=submit] {
    display: block;
    font-size: 1em;
    width: 100%;
    height: 40px;
    background-color: #27ca5e;
-   border: none;
+   border: 1px solid black;
    border-radius: 6px;
 }
 
 form > input[type=submit]:hover {
    background-color: #33ff77;
+   font-weight: bold;
    cursor: pointer;
 }
 
@@ -116,5 +147,4 @@ form > a.button > i {
 form > a.button:hover {
    background-color: #aa2773;
    color: white;
-
 }
